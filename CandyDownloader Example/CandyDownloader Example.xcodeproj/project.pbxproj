@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36E9D3D81FD8E9AF008163F1 /* BCCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E9D3D71FD8E9AF008163F1 /* BCCAppDelegate.m */; };
+		36E9D3DB1FD8E9AF008163F1 /* BCCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E9D3DA1FD8E9AF008163F1 /* BCCViewController.m */; };
+		36E9D3DE1FD8E9AF008163F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E9D3DC1FD8E9AF008163F1 /* Main.storyboard */; };
+		36E9D3E01FD8E9AF008163F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E9D3DF1FD8E9AF008163F1 /* Assets.xcassets */; };
+		36E9D3E31FD8E9AF008163F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E9D3E11FD8E9AF008163F1 /* LaunchScreen.storyboard */; };
+		36E9D3E61FD8E9AF008163F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E9D3E51FD8E9AF008163F1 /* main.m */; };
+		36E9D3EF1FD8F03C008163F1 /* BCCPersistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E9D3EE1FD8F03C008163F1 /* BCCPersistance.m */; };
+		36E9D3F21FD8F658008163F1 /* BCCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E9D3F11FD8F658008163F1 /* BCCModel.m */; };
+		36E9D3F51FD90D36008163F1 /* BCCDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E9D3F41FD90D36008163F1 /* BCCDownloader.m */; };
+		7FD90BA22111862E58454377 /* libPods-CandyDownloader Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4E34278566B2ED5A0A99F7 /* libPods-CandyDownloader Example.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C225615880550280F4163BB /* Pods-CandyDownloader Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyDownloader Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CandyDownloader Example/Pods-CandyDownloader Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2A4E34278566B2ED5A0A99F7 /* libPods-CandyDownloader Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CandyDownloader Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E9D3D31FD8E9AF008163F1 /* CandyDownloader Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CandyDownloader Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E9D3D61FD8E9AF008163F1 /* BCCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCCAppDelegate.h; sourceTree = "<group>"; };
+		36E9D3D71FD8E9AF008163F1 /* BCCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCCAppDelegate.m; sourceTree = "<group>"; };
+		36E9D3D91FD8E9AF008163F1 /* BCCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCCViewController.h; sourceTree = "<group>"; };
+		36E9D3DA1FD8E9AF008163F1 /* BCCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCCViewController.m; sourceTree = "<group>"; };
+		36E9D3DD1FD8E9AF008163F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36E9D3DF1FD8E9AF008163F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36E9D3E21FD8E9AF008163F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36E9D3E41FD8E9AF008163F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36E9D3E51FD8E9AF008163F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36E9D3ED1FD8F03C008163F1 /* BCCPersistance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCCPersistance.h; sourceTree = "<group>"; };
+		36E9D3EE1FD8F03C008163F1 /* BCCPersistance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCCPersistance.m; sourceTree = "<group>"; };
+		36E9D3F01FD8F658008163F1 /* BCCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCCModel.h; sourceTree = "<group>"; };
+		36E9D3F11FD8F658008163F1 /* BCCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCCModel.m; sourceTree = "<group>"; };
+		36E9D3F31FD90D36008163F1 /* BCCDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCCDownloader.h; sourceTree = "<group>"; };
+		36E9D3F41FD90D36008163F1 /* BCCDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCCDownloader.m; sourceTree = "<group>"; };
+		82F1AA05EDDEB396B010A03B /* Pods-CandyDownloader Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyDownloader Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CandyDownloader Example/Pods-CandyDownloader Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36E9D3D01FD8E9AF008163F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD90BA22111862E58454377 /* libPods-CandyDownloader Example.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36E9D3CA1FD8E9AE008163F1 = {
+			isa = PBXGroup;
+			children = (
+				36E9D3EC1FD8EFBF008163F1 /* BCCDownloader */,
+				36E9D3D51FD8E9AF008163F1 /* CandyDownloader Example */,
+				36E9D3D41FD8E9AF008163F1 /* Products */,
+				B53E7E26C57DBD8A2C863172 /* Pods */,
+				77CA7082C2502F6356928E67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		36E9D3D41FD8E9AF008163F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36E9D3D31FD8E9AF008163F1 /* CandyDownloader Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36E9D3D51FD8E9AF008163F1 /* CandyDownloader Example */ = {
+			isa = PBXGroup;
+			children = (
+				36E9D3D61FD8E9AF008163F1 /* BCCAppDelegate.h */,
+				36E9D3D71FD8E9AF008163F1 /* BCCAppDelegate.m */,
+				36E9D3D91FD8E9AF008163F1 /* BCCViewController.h */,
+				36E9D3DA1FD8E9AF008163F1 /* BCCViewController.m */,
+				36E9D3DC1FD8E9AF008163F1 /* Main.storyboard */,
+				36E9D3DF1FD8E9AF008163F1 /* Assets.xcassets */,
+				36E9D3E11FD8E9AF008163F1 /* LaunchScreen.storyboard */,
+				36E9D3E41FD8E9AF008163F1 /* Info.plist */,
+				36E9D3E51FD8E9AF008163F1 /* main.m */,
+			);
+			path = "CandyDownloader Example";
+			sourceTree = "<group>";
+		};
+		36E9D3EC1FD8EFBF008163F1 /* BCCDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				36E9D3ED1FD8F03C008163F1 /* BCCPersistance.h */,
+				36E9D3EE1FD8F03C008163F1 /* BCCPersistance.m */,
+				36E9D3F01FD8F658008163F1 /* BCCModel.h */,
+				36E9D3F11FD8F658008163F1 /* BCCModel.m */,
+				36E9D3F31FD90D36008163F1 /* BCCDownloader.h */,
+				36E9D3F41FD90D36008163F1 /* BCCDownloader.m */,
+			);
+			name = BCCDownloader;
+			path = ../BCCDownloader;
+			sourceTree = "<group>";
+		};
+		77CA7082C2502F6356928E67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A4E34278566B2ED5A0A99F7 /* libPods-CandyDownloader Example.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B53E7E26C57DBD8A2C863172 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C225615880550280F4163BB /* Pods-CandyDownloader Example.debug.xcconfig */,
+				82F1AA05EDDEB396B010A03B /* Pods-CandyDownloader Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36E9D3D21FD8E9AF008163F1 /* CandyDownloader Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36E9D3E91FD8E9AF008163F1 /* Build configuration list for PBXNativeTarget "CandyDownloader Example" */;
+			buildPhases = (
+				8E772161D86483C062BA3A88 /* [CP] Check Pods Manifest.lock */,
+				36E9D3CF1FD8E9AF008163F1 /* Sources */,
+				36E9D3D01FD8E9AF008163F1 /* Frameworks */,
+				36E9D3D11FD8E9AF008163F1 /* Resources */,
+				A3061A97B91D891353CA106F /* [CP] Embed Pods Frameworks */,
+				E8889559E588A017DF495A75 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CandyDownloader Example";
+			productName = "CandyDownloader Example";
+			productReference = 36E9D3D31FD8E9AF008163F1 /* CandyDownloader Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36E9D3CB1FD8E9AE008163F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BCC;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Candy;
+				TargetAttributes = {
+					36E9D3D21FD8E9AF008163F1 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 36E9D3CE1FD8E9AE008163F1 /* Build configuration list for PBXProject "CandyDownloader Example" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36E9D3CA1FD8E9AE008163F1;
+			productRefGroup = 36E9D3D41FD8E9AF008163F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36E9D3D21FD8E9AF008163F1 /* CandyDownloader Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36E9D3D11FD8E9AF008163F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E9D3E31FD8E9AF008163F1 /* LaunchScreen.storyboard in Resources */,
+				36E9D3E01FD8E9AF008163F1 /* Assets.xcassets in Resources */,
+				36E9D3DE1FD8E9AF008163F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E772161D86483C062BA3A88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CandyDownloader Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3061A97B91D891353CA106F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CandyDownloader Example/Pods-CandyDownloader Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8889559E588A017DF495A75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CandyDownloader Example/Pods-CandyDownloader Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36E9D3CF1FD8E9AF008163F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E9D3EF1FD8F03C008163F1 /* BCCPersistance.m in Sources */,
+				36E9D3F21FD8F658008163F1 /* BCCModel.m in Sources */,
+				36E9D3DB1FD8E9AF008163F1 /* BCCViewController.m in Sources */,
+				36E9D3E61FD8E9AF008163F1 /* main.m in Sources */,
+				36E9D3D81FD8E9AF008163F1 /* BCCAppDelegate.m in Sources */,
+				36E9D3F51FD90D36008163F1 /* BCCDownloader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		36E9D3DC1FD8E9AF008163F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36E9D3DD1FD8E9AF008163F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36E9D3E11FD8E9AF008163F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36E9D3E21FD8E9AF008163F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36E9D3E71FD8E9AF008163F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		36E9D3E81FD8E9AF008163F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36E9D3EA1FD8E9AF008163F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C225615880550280F4163BB /* Pods-CandyDownloader Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66A52TDMY9;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = "CandyDownloader Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baiwhte.downloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36E9D3EB1FD8E9AF008163F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82F1AA05EDDEB396B010A03B /* Pods-CandyDownloader Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66A52TDMY9;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = "CandyDownloader Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baiwhte.downloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36E9D3CE1FD8E9AE008163F1 /* Build configuration list for PBXProject "CandyDownloader Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36E9D3E71FD8E9AF008163F1 /* Debug */,
+				36E9D3E81FD8E9AF008163F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36E9D3E91FD8E9AF008163F1 /* Build configuration list for PBXNativeTarget "CandyDownloader Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36E9D3EA1FD8E9AF008163F1 /* Debug */,
+				36E9D3EB1FD8E9AF008163F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36E9D3CB1FD8E9AE008163F1 /* Project object */;
+}
