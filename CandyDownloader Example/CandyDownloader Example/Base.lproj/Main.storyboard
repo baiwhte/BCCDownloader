@@ -18,13 +18,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dht-IT-o3K">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dht-IT-o3K" customClass="BCCTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dht-IT-o3K" id="ce2-yJ-UxA">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdW-YO-eXc">
+                                            <rect key="frame" x="10" y="11" width="308" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znx-0b-Kwe">
+                                            <rect key="frame" x="323" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Znx-0b-Kwe" firstAttribute="centerY" secondItem="ce2-yJ-UxA" secondAttribute="centerY" id="HD9-GM-CPt"/>
+                                        <constraint firstAttribute="trailing" secondItem="Znx-0b-Kwe" secondAttribute="trailing" constant="10" id="L88-y5-PCm"/>
+                                        <constraint firstItem="RdW-YO-eXc" firstAttribute="centerY" secondItem="ce2-yJ-UxA" secondAttribute="centerY" id="dsz-YY-4sF"/>
+                                        <constraint firstItem="RdW-YO-eXc" firstAttribute="leading" secondItem="ce2-yJ-UxA" secondAttribute="leading" constant="10" id="ngD-2i-chS"/>
+                                        <constraint firstItem="Znx-0b-Kwe" firstAttribute="leading" secondItem="RdW-YO-eXc" secondAttribute="trailing" constant="5" id="y3r-VF-1lz"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="progressLabel" destination="Znx-0b-Kwe" id="U7K-NT-N0v"/>
+                                    <outlet property="urlLabel" destination="RdW-YO-eXc" id="VII-EA-QYK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

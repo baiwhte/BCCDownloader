@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, BCCDownloadState)
     BCCDownloadStateWillBeDeleted
 };
 
-@interface BCCModel : RLMObject
+@interface BCCModel : RLMObject <NSCopying>
 
 @property NSString *URLString;
 // 

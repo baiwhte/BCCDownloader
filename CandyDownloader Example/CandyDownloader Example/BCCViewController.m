@@ -7,10 +7,10 @@
 //
 
 #import "BCCViewController.h"
-
+#import "BCCTableViewCell.h"
 #import "BCCDownloader.h"
 
-@interface BCCViewController ()
+@interface BCCViewController () <BCCDownloaderDelegate>
 
 @property (nonatomic, copy) NSArray *downloadArr;
 
@@ -22,9 +22,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.downloadArr = @[
-                         
+                         @"http://7xqhmn.media1.z0.glb.clouddn.com/femorning-20161106.mp4",
+                         @"http://wvideo.spriteapp.cn/video/2016/0328/56f8ec01d9bfe_wpd.mp4"
                          ];
     NSLog(@"%@", self.tableView);
+    
+    [BCCDownloader shareInstance].delegate = self;
 }
 
 
@@ -46,11 +49,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    BCCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 
     NSString *URLString = self.downloadArr[indexPath.row];
-    cell.textLabel.text = URLString;
-
+    cell.urlLabel.text = URLString;
+    cell.progressLabel.text = @"0";
     return cell;
 }
 
@@ -74,6 +77,37 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         NSString *URLString = self.downloadArr[indexPath.row];
         [[BCCDownloader shareInstance] deleteTaskByPrimaryKey:URLString];
+        BCCTableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+        if (cell) {
+            cell.progressLabel.text = @"0";
+        }
     }
+}
+
+#pragma mark - BCCDownloaderDelegate
+
+- (void)downloader:(BCCDownloader *)downloader model:(BCCModel *)model didCompletedWithWithError:(NSError *)error
+{
+    NSInteger index = [self.downloadArr indexOfObject:model.URLString];
+    BCCTableViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
+    if (cell == nil) {
+        return;
+    }
+    cell.progressLabel.text = @"100%";
+}
+
+- (void)downloader:(BCCDownloader *)downloader model:(BCCModel *)model
+        didWriteData:(int64_t)bytesWritten
+        totalBytesWritten:(int64_t)totalBytesWritten
+        totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
+{
+    NSInteger index = [self.downloadArr indexOfObject:model.URLString];
+    BCCTableViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
+    if (cell == nil) {
+        return;
+    }
+    float percentFloat = (float)totalBytesWritten / (float)totalBytesExpectedToWrite;
+    NSInteger percentInt = percentFloat * 100;
+    cell.progressLabel.text = [NSString stringWithFormat:@"%d%%", (int)percentInt];
 }
 @end

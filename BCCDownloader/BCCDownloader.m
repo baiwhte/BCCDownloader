@@ -219,6 +219,11 @@ static NSString *kBCCBackgroundSessionIdentifier = @"com.baiwhte.backgroundSessi
     [self deleteTaskWithModel:[self.persistance objectForPrimaryKey:key]];
 }
 
+- (BCCModel *)objectForPrimaryKey:(NSString *)key
+{
+    return [self.persistance objectForPrimaryKey:key];
+}
+
 - (void)deleteTaskWithModel:(BCCModel *)model
 {
     [self deleteTaskWithModel:model next:YES];
@@ -368,7 +373,9 @@ didCompleteWithError:(nullable NSError *)error {
                 return model;
             }];
         }
-        
+        if ([self.delegate respondsToSelector:@selector(downloader:model:didCompletedWithWithError:)]) {
+            [self.delegate downloader:self model:[model copy] didCompletedWithWithError:error];
+        }
        
     }
     
@@ -403,7 +410,6 @@ didFinishDownloadingToURL:(NSURL *)location {
         //保存
         [self.persistance createOrUpdateModel:^BCCModel *{
             model.state = state;
-            model.sessionTaskIdentifier = 0;
             if (state == BCCDownloadStateSuccess) {
                 model.downloadCompletedAt = [NSDate date];
             }
@@ -426,6 +432,17 @@ didFinishDownloadingToURL:(NSURL *)location {
                 model.filebytes = totalBytesExpectedToWrite;
                 return model;
             }];
+        }
+        if ([self.delegate respondsToSelector:@selector(downloader:
+                                                        model:
+                                                        didWriteData:
+                                                        totalBytesWritten:
+                                                        totalBytesExpectedToWrite:)]) {
+            [self.delegate downloader:self
+                                model:[model copy]
+                         didWriteData:bytesWritten
+                    totalBytesWritten:totalBytesWritten
+            totalBytesExpectedToWrite:totalBytesExpectedToWrite];
         }
     }
 }

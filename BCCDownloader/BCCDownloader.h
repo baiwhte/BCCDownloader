@@ -12,10 +12,26 @@
 
 typedef void (^BCCBackgroundSessionCompletionHandler)(void);
 
+@class BCCDownloader;
+@protocol BCCDownloaderDelegate <NSObject>
+
+@optional
+
+- (void)downloader:(BCCDownloader *)downloader model:(BCCModel *)model didCompletedWithWithError:(NSError *)error;
+
+- (void)downloader:(BCCDownloader *)downloader model:(BCCModel *)model
+        didWriteData:(int64_t)bytesWritten
+        totalBytesWritten:(int64_t)totalBytesWritten
+        totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;
+
+@end
+
 @interface BCCDownloader : NSObject
 
 /*! 允许同时下载数,最大值为3 */
 @property (nonatomic, assign) NSInteger maxConcurrentDownloadCount;
+
+@property (nonatomic, weak  ) id<BCCDownloaderDelegate> delegate;
 
 + (instancetype)shareInstance;
 
@@ -28,5 +44,6 @@ typedef void (^BCCBackgroundSessionCompletionHandler)(void);
 - (void)deleteTaskWithModels:(RLMResults *)results;
 
 - (void)deleteTaskByPrimaryKey:(NSString *)key;
+- (BCCModel *)objectForPrimaryKey:(NSString *)key;
 
 @end

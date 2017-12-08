@@ -33,10 +33,14 @@
     return @"URLString";
 }
 
-/**
+
 - (id)copyWithZone:(nullable NSZone *)zone
 {
-    return [[[self class] allocWithZone:zone] init];
+    BCCModel *model = [[[self class] allocWithZone:zone] init];
+    model.URLString = self.URLString;
+    model.filename  = self.filename;
+    model.state     = self.state;
+    return model;
 }
-*/
+
 @end

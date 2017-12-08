@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3678C51E1FDA423D0096AC1C /* BCCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3678C51C1FDA423D0096AC1C /* BCCTableViewCell.m */; };
 		36E9D3D81FD8E9AF008163F1 /* BCCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E9D3D71FD8E9AF008163F1 /* BCCAppDelegate.m */; };
 		36E9D3DB1FD8E9AF008163F1 /* BCCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E9D3DA1FD8E9AF008163F1 /* BCCViewController.m */; };
 		36E9D3DE1FD8E9AF008163F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E9D3DC1FD8E9AF008163F1 /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		0C225615880550280F4163BB /* Pods-CandyDownloader Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyDownloader Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CandyDownloader Example/Pods-CandyDownloader Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2A4E34278566B2ED5A0A99F7 /* libPods-CandyDownloader Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CandyDownloader Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3678C51B1FDA423D0096AC1C /* BCCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCCTableViewCell.h; sourceTree = "<group>"; };
+		3678C51C1FDA423D0096AC1C /* BCCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCCTableViewCell.m; sourceTree = "<group>"; };
 		36E9D3D31FD8E9AF008163F1 /* CandyDownloader Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CandyDownloader Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E9D3D61FD8E9AF008163F1 /* BCCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCCAppDelegate.h; sourceTree = "<group>"; };
 		36E9D3D71FD8E9AF008163F1 /* BCCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCCAppDelegate.m; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 				36E9D3E11FD8E9AF008163F1 /* LaunchScreen.storyboard */,
 				36E9D3E41FD8E9AF008163F1 /* Info.plist */,
 				36E9D3E51FD8E9AF008163F1 /* main.m */,
+				3678C51B1FDA423D0096AC1C /* BCCTableViewCell.h */,
+				3678C51C1FDA423D0096AC1C /* BCCTableViewCell.m */,
 			);
 			path = "CandyDownloader Example";
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				36E9D3E61FD8E9AF008163F1 /* main.m in Sources */,
 				36E9D3D81FD8E9AF008163F1 /* BCCAppDelegate.m in Sources */,
 				36E9D3F51FD90D36008163F1 /* BCCDownloader.m in Sources */,
+				3678C51E1FDA423D0096AC1C /* BCCTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
