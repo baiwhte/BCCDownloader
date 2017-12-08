@@ -3,15 +3,15 @@
     
 
 # Usage
-    import ` BCCDownloader ` Directory to your project.
-    ` #import "BCCDownloader.h" `
-    ` [[BCCDownloader shareInstance] addDownloadTaskWithURLString:@"xxx" 
-                                                         filename:@"xxx" ]; `
+    import BCCDownloader Directory to your project.
+    #import "BCCDownloader.h" 
+    [[BCCDownloader shareInstance] addDownloadTaskWithURLString:@"xxx" 
+                                                         filename:@"xxx" ]; 
 
 # issues
 
 
-# Lisence
+# Licenses
 
-    All source code is licensed under the [MIT License](https://raw.githubusercontent.com/rs/SDWebImage/master/LICENSE).
+    All source code is licensed under the [MIT License](https://raw.githubusercontent.com/rs/SDWebImage/master/LICENSE) .
 
