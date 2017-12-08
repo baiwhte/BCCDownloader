@@ -22,8 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.downloadArr = @[
-                         @"http://7xqhmn.media1.z0.glb.clouddn.com/femorning-20161106.mp4",
-                         @"http://wvideo.spriteapp.cn/video/2016/0328/56f8ec01d9bfe_wpd.mp4"
+                         
                          ];
     NSLog(@"%@", self.tableView);
     
